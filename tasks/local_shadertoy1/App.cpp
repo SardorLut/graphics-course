@@ -74,7 +74,6 @@ App::App()
   commandManager = etna::get_context().createPerFrameCmdMgr();
 
 
-  {
     // TODO: Initialize any additional resources you require here!
     etna::create_program("shadertoy", {LOCAL_SHADERTOY_SHADERS_ROOT "toy.comp.spv"});
 
@@ -88,7 +87,6 @@ App::App()
     });
 
     defaultSampler = etna::Sampler(etna::Sampler::CreateInfo{.name = "default_sampler"});
-  }
 }
 
 App::~App()
