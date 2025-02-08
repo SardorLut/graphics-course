@@ -13,7 +13,6 @@ layout(push_constant) uniform params {
 
 float iTime;
 vec2 iResolution;
-vec2 iMouse;
 vec3 calcNormal(vec3 p) {
     vec2 e = vec2(0.001, 0.0);
     vec3 n = vec3(
