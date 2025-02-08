@@ -3,7 +3,7 @@
 
 layout(location = 0) out vec4 fragColor;
 
-layout(binding = 0) uniform sampler2D emp;
+layout(binding = 0) uniform sampler2D ichannel1;
 layout(binding = 1) uniform sampler2D iChannel0;
 layout(push_constant) uniform params {
   uint resolution_x;
