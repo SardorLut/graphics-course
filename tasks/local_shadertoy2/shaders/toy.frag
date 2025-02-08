@@ -3,7 +3,7 @@
 
 layout(location = 0) out vec4 fragColor;
 
-layout(binding = 0) uniform sampler2D emp;
+layout(binding = 0) uniform sampler2D ichannel1;
 layout(binding = 1) uniform sampler2D iChannel0;
 layout(push_constant) uniform params {
   uint resolution_x;
@@ -13,7 +13,6 @@ layout(push_constant) uniform params {
 
 float iTime;
 vec2 iResolution;
-vec2 iMouse;
 vec3 calcNormal(vec3 p) {
     vec2 e = vec2(0.001, 0.0);
     vec3 n = vec3(

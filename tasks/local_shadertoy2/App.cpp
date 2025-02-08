@@ -130,11 +130,9 @@ App::~App() {
 }
 
 void App::run() {
-  start = std::chrono::system_clock::now();
   while (!osWindow->isBeingClosed()) {
-  windowing.poll();
-
-  drawFrame();
+    windowing.poll();
+    drawFrame();
   }
 
   // We need to wait for the GPU to execute the last frame before destroying
